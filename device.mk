@@ -104,6 +104,9 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     Aperture
 
+# Miui Camera
+#$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
