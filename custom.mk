@@ -16,3 +16,6 @@ GENESIS_OFFICIAL := true
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
+
+#Pico Gapps
+TARGET_USES_PICO_GAPPS := true
