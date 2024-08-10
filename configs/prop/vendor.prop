@@ -118,6 +118,7 @@ persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=true
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
+vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 af.fast_track_multiplier=1
@@ -137,6 +138,7 @@ ro.crypto.volume.options=::v2
 # Display
 ro.vendor.display.sensortype=2
 debug.sf.auto_latch_unsignaled=0
+debug.sf.enable_gl_backpressure=0
 debug.sf.enable_hwc_vds=1
 debug.sf.enable_egl_image_tracker=0
 debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
@@ -192,6 +194,9 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
+
+# Graphics
+debug.sdm.support_writeback=0
 
 # HWUI
 debug.hwui.renderer=skiagl

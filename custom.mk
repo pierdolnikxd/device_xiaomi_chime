@@ -4,18 +4,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common Infinity-X stuff
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# Bootanimation
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Officials Flag
-DERP_BUILDTYPE := Official
+INFINITY_MAINTAINER := pawelik001
+TARGET_SUPPORTS_BLUR := true
 
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
-
-#Pico Gapps
-TARGET_USES_PICO_GAPPS := true
