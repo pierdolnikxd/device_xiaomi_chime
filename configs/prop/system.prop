@@ -1,3 +1,9 @@
+# Infinity-X AboutPhone
+ro.infinity.soc=Snapdragon 662
+ro.infinity.battery=5000mAh
+ro.infinity.display=1080x2400, 60Hz
+ro.infinity.camera=48 MP + 2 MP, 8 MP
+
 # Blur
 ro.launcher.blur.appLaunch=0
 

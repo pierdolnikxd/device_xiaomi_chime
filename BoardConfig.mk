@@ -57,12 +57,12 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/chime
-TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
+TARGET_KERNEL_CONFIG := vendor/chime_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-#TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
+TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
-TARGET_KERNEL_CLANG_VERSION := r487747c
+BOARD_RAMDISK_USE_LZ4 := true
 
 # Platform
 BOARD_VENDOR := xiaomi
@@ -190,9 +190,6 @@ VENDOR_SECURITY_PATCH := 2023-02-01
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
-
-# Touchpanel
-TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

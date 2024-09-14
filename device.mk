@@ -120,6 +120,9 @@ PRODUCT_PACKAGES += \
     libpng.vendor \
     libgui_vendor
 
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
