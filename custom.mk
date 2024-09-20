@@ -4,14 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common Infinity X stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_NOT_USES_BLUR := true
-# Officials Flag
-DERP_BUILDTYPE := Official
+
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := pawelik001
+TARGET_SUPPORTS_BLUR := true
 
 # Lineage Health
 PRODUCT_PACKAGES += \
