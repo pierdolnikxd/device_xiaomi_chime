@@ -14,7 +14,3 @@ TARGET_BOOT_ANIMATION_RES := 1080
 INFINITY_BUILD_TYPE := OFFICIAL
 INFINITY_MAINTAINER := pawelik001
 TARGET_SUPPORTS_BLUR := true
-
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
