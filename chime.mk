@@ -300,8 +300,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libchrome.vendor \
     nfc_nci.st21nfc.default \
-    NfcNci \
-    SecureElement \
     Tag
 
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/nfc/android.hardware.nfc@1.2-service.st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.st.rc
