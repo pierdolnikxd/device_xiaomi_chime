@@ -5,15 +5,16 @@
 #
 
 # Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-# Inherit more stuff
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP := true
+INFINITY_MAINTAINER := pawelik001
+TARGET_SUPPORTS_BLUR := true
+TARGET_USES_MIUI_CAMERA := true
+TARGET_INCLUDES_MIUI_CAMERA := true

@@ -117,6 +117,9 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor \
     libgui_vendor
 
+# MiuiCamera
+#$(call inherit-product, vendor/xiaomi/bengal_camera/miuicamera.mk)
+
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -199,10 +202,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    libloc_net_iface \
-    libloc_net_iface.vendor \
-    liblocdiagiface
+    android.hardware.gnss@2.1.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
@@ -386,7 +386,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2 \
     android.hardware.power@1.2.vendor
-
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
