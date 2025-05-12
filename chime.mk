@@ -117,9 +117,6 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor \
     libgui_vendor
 
-# MiuiCamera
-#$(call inherit-product, vendor/xiaomi/bengal_camera/miuicamera.mk)
-
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
